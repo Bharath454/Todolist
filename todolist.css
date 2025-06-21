@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: darkslategray;
+}
+
+.todo {
+  font-size: 25px;
+  color: darkblue;
+  font-family: monospace;
+  margin-left: 10px;
+  margin-bottom: 6px;
+}
+
+.box {
+  background-color: white;
+  height: 400px;
+  width: 350px;
+  margin-left: 540px;
+  margin-top: 130px;
+  border-radius: 20px;
+  padding: 10px;
+  overflow-y: auto; /* Enables scroll when content exceeds */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-y: scroll; /* always show scrollbar */
+
+
+}
+
+/* Input and button section */
+#inputbox {
+  width: 80%;
+  background-color: rgb(232, 228, 228);
+  color: rgb(75, 75, 75);
+  font-weight: bold;
+  padding-left: 10px;
+  border: 3px rgb(232, 228, 228) solid;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+
+}
+
+#btn {
+  background-color: orange;
+  color: white;
+  width: 80px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 3px orange solid;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+/* Table container */
+table.container {
+  width: 100%;
+  margin-top: 15px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table.container tr {
+  border-bottom: 1px solid #cfc9c9;
+  margin-top: 110px;
+  margin-bottom: 5px;
+}
+
+table.container td {
+  padding: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 200px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Delete button inside the table */
+button.delete {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 3px orange solid;
+  padding: 5px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Prevent overflow */
+.container {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* Ensure table width is 100% */
+table.container {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* to make columns fixed width */
+}
+
+/* First column: task text */
+table.container td:first-child {
+  max-width: 70%; /* or any width you want */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+/* Second column: delete button cell */
+table.container td:last-child {
+  width: 30%;   /* fix width for the button cell */
+  text-align: right;
+  vertical-align: middle;
+  padding: 8px;
+}
+
+/* Style delete button */
+button.delete {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 3px orange solid;
+  padding: 5px 10px;
+  cursor: pointer;
+  white-space: nowrap;margin-left: 100px;
+}
+
+button.delete:hover{
+    background-color: red;
+      border: 3px red solid;
+}
+
+
+.input-group {
+  display: flex;
+  gap: 6px;
+  margin-left: 15px;  /* keep margin */
+  margin-top: 10px;
+   position: relative;
+}
+
+#inputbox {
+  flex: 1; /* fill available space */
+  min-width: 0;
+  width: 290px; 
+  margin-right: 20px; 
+  margin-top: 0;/* allow shrinking */
+ 
+}
+
+#btn {
+  width: 80px;
+  position: static; 
+  position: absolute;
+  top: 0;
+  left: 240px;
+  
+  margin-top: 0;/* remove absolute */
+}
+
+.textfont{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
