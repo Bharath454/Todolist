@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Site</title>
+    <link rel="stylesheet" href="grocery.css">
+
+</head>
+
+<body>
+
+    <h1>Grocery List:</h1>
+
+    <div class="container">
+        <input type="checkbox" name="lang" value="Rice">Rice
+        <br>
+        <input type="checkbox" name="lang" value="Wheat">Wheat
+        <br>
+        <input type="checkbox" name="lang" value="Sugar">Sugar
+        <br>
+        <input type="checkbox" name="lang" value="Semiya">Semiya
+        <br>
+        <input type="checkbox" name="lang" value="Paruppu">Paruppu
+        <br>
+        <input type="checkbox" name="lang" value="Noodles">Noodles
+         <br>
+        <input type="checkbox" name="lang" value="shampuu">shampuu
+        <br>
+        <input type="checkbox" name="lang" value="Maida">Maida
+        <br>
+        <input type="checkbox" name="lang" value="Masalas">Masalas
+        <br>
+   
+</div>
+
+
+    <h1 >Finalized list of purchase</h1>
+    <h1 id="head" style="font-size: 25px; margin-left: 30px;color: rgb(2, 62, 2);"></h1>
+
+    
+    
+    <button onclick="handleclick()" id="btn">For Payment</button>
+    <br>
+    <h1 style="font-size: 25px;margin-left: 20px;display: none;" id="price">Price:500</h1>
+    <img src="qr.png" id="Qr">
+
+    
+
+
+    <script src="grocery.js"></script>
+</body>
+
+</html>

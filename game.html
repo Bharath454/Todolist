@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Game</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  #num {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: 2px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #050b12;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+</style>
+
+
+</head>
+<body>
+    <p id="num">0</p>
+    <button onclick="handleincrese()">increase</button>
+    <button onclick="handledecrse()">decrease</button>
+
+
+    <script>
+        
+        var num=document.getElementById("num")
+        var number=0
+        function handleincrese(){
+            num.textContent=++number
+        }
+        function handledecrse(){
+            if(number>=0)
+        {
+            num.textContent=number--
+        }
+        }
+    </script>
+</body>
+</html>

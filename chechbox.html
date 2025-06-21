@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox with Push and Splice</title>
+</head>
+<body>
+    <input type="checkbox" name="lang" value="python">Python
+    <input type="checkbox" name="lang" value="java">Java
+    <input type="checkbox" name="lang" value="js">JavaScript
+    <input type="checkbox" name="lang" value="C++">C++
+
+    <h1 id="result">LANGUAGES: </h1>
+
+    <script>
+        var lang = document.getElementsByName("lang");
+        var result = document.getElementById("result");
+        var skills = [];
+
+        for (let i = 0; i < lang.length; i++) {
+            lang[i].addEventListener("change", function (event) {
+                var value = event.target.value;
+
+                if (event.target.checked) {
+                    skills.push(value); // Add selected value
+                } else {
+                    var index = skills.indexOf(value);
+                    if (index !== -1) {
+                        skills.splice(index, 1); // Remove value using splice
+                    }
+                }
+
+                result.textContent = "LANGUAGES: " + skills
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <div id="names">
+
+   </div>
+    <Script>
+   var datas =  [
+  {
+    "id": 1,
+    "name": "Nike Air Max",
+    "price": 150,
+    "category": "Running Shoes"
+  },
+  {
+    "id": 2,
+    "name": "Adidas Ultraboost",
+    "price": 180,
+    "category": "Running Shoes"
+  },
+  {
+    "id": 3,
+    "name": "Puma Suede Classic",
+    "price": 85,
+    "category": "Lifestyle"
+  }
+]
+
+var names=document.getElementById("names")
+
+datas.map(function(item){
+    var head=document.createElement("h1")
+    head.textContent=item.name
+
+    var para=document.createElement("p")
+    para.textContent=item.price
+    
+    var category=document.createElement("h4")
+    category.textContent=item.category
+
+    names.append(head,para,category)
+    
+})
+
+
+
+// console.log(datas)
+
+    </Script>
+</body>
+</html>

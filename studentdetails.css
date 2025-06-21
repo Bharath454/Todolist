@@ -1,0 +1,115 @@
+Global Styles
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #150275;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Form Table Styling */
+  .table1 {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #150275;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    width: 99%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: #05b10a;
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    height: 35px;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+   
+  }
+  
+  .btn:hover {
+    background-color: #3bd623;
+  }
+
+  .delbtn:hover {
+    background-color: #c50505;
+  }
+  
+  /* Output Table Specific */
+  #container th {
+    background-color: #150275;
+  }
+  
+  #container td button {
+    background-color: #f44336;
+  }
+  
+  #container td button:hover {
+    background-color: #d32f2f;
+  }
+
+
+  .delbtn{
+    background-color: rgb(6, 164, 9);
+    width: 150px;
+    padding: 4px 8px;
+    border: none;
+    height: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    margin-left: 50px;
+    margin-right: 0px;
+    
+  }
+  
+  #container{
+    margin: 0 auto;
+    /* border-collapse: collapse; */
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

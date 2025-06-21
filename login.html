@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+
+
+    <input type="text" placeholder="enter the name" id="name">
+    <br>
+    <input type="text" placeholder="enter the password" id="pass">
+    <br>
+
+    <button onclick="aclick()">login</button>
+
+    <p id="result">result is:</p>
+
+
+    
+
+<form onsubmit=""></form>
+
+
+    <script>
+        function aclick(){
+            
+                    var name=document.getElementById("name").value
+                    var pass=document.getElementById("pass").value
+
+                    var bodyclr=document.querySelector("body")
+                    console.log(name)
+                    console.log(pass)
+                    
+            
+            var username="bharath"
+            var password="hi"   
+
+            var result=document.getElementById("result")
+    
+        if(username==name&&password==pass)
+        {
+            result.textContent="result is successfull"
+            bodyclr.style.backgroundColor="green"
+
+        }
+        else{
+            result.textContent="result is failed"
+            bodyclr.style.backgroundColor="red"
+        }
+
+        }
+
+
+
+
+
+        var signup = prompt("enter the name").trim().toLowerCase()
+        var signpass = prompt("enter the name").trim().toLowerCase()
+
+        function login() {
+
+
+            let loginuser = prompt("en the us").trim().toLowerCase()
+            let loginpass = prompt("en the us").trim().toLowerCase()
+
+            var loginnp = {
+                name: signup,
+                password: signpass
+            }
+
+            if (loginuser == loginnp.name && loginpass == loginnp.password) {
+                console.log("ls")
+            }
+            else {
+                console.log("lf")
+            }
+
+
+        }
+        login()
+
+
+
+        // login using DOM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </script>
+</body>
+
+</html>

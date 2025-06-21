@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    text-align: center;
+    color: #333;
+  }
+
+  h1 {
+    color: #0077cc;
+    margin-bottom: 30px;
+  }
+
+  input[type="text"] {
+    padding: 12px 15px;
+    width: 70%;
+    font-size: 1.1rem;
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="text"]:focus {
+    border-color: #004c99;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #004c99;
+  }
+
+  #result {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  #score {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+</style>
+
+</head>
+<body>
+    <h1>Guess the Number Game:</h1>
+    <input type="text" placeholder="Enter a number" id="inputbox">
+    <button onclick="handlecheck()">check</button>
+    <p id="result">you are right/wrong</p>
+    <p id="score">Remaining Chances:</p>
+
+
+    <script src="guessgame.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Site</title>
+    
+</head>
+<body>
+    
+    <input type="text" placeholder="Enter the Name" id="search">
+
+    <div id="container">
+        <h1>Bharath</h1>
+        <h1>Teero</h1>
+        <h1>Naveen</h1>
+        <h1>Siva</h1>
+        <h1>Praveen</h1>
+        <h1>Vinod</h1>
+        <h1>Sai</h1>
+        <h1>Elakeeya</h1>
+        <h1>Sujatha</h1>
+        
+    </div>
+
+
+    <script>
+        var search=document.getElementById("search")
+        var container=document.getElementById("container")
+
+        var h1list=container.querySelectorAll("h1")
+        
+
+        search.addEventListener("keyup",function(){
+
+            var enteredvalue=event.target.value.toUpperCase()
+
+            for(i=0;i<h1list.length;i++){
+
+                if(h1list[i].textContent.toUpperCase().indexOf(enteredvalue)<0){
+
+                    h1list[i].style.display="none"
+                }
+                else{
+                    h1list[i].style.display="block"
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>

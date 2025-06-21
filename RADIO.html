@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <input type="radio" name="gender" value="male"  >male
+    <input type="radio" name="gender" value="female" >female
+
+    <h1 id="head">male/female</h1>
+
+
+    <script>
+        var gender=document.getElementsByName("gender")
+        var head=document.getElementById("head")
+       
+       for(i=0;i<2;i=i+1){
+
+        gender[i].addEventListener("click",function(){
+            head.textContent=event.target.value
+        })
+       }
+    </script>
+</body>
+</html>
