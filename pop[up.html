@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    .naveen, .siva, .bharath {
+      background-color: black;
+      height: 50px;
+      width: 150px;
+      color: yellow;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn1">Naveen</button>
+  <div class="naveen">
+    <p class="para" style="text-align: right;cursor: pointer;">X</p>
+    <p>Naveen is a good boy</p>
+  </div>
+
+  <button class="btn2">Siva</button>
+  <div class="siva">
+    <p class="para" style="text-align: right;cursor: pointer;">X</p>
+    <p>Siva is an good boy</p>
+  </div>
+
+  <button class="btn3">Bharath</button>
+  <div class="bharath">
+    <p class="para" style="text-align: right;cursor: pointer;">X</p>
+    <p>Bharath is a good boy</p>
+  </div>
+
+  <script>
+    const naveen = document.querySelector(".naveen");
+    const siva = document.querySelector(".siva");
+    const bharath = document.querySelector(".bharath");
+
+    document.querySelector(".btn1").addEventListener("click", () => {
+      naveen.style.display = "block";
+    });
+
+    document.querySelector(".btn2").addEventListener("click", () => {
+      siva.style.display = "block";
+    });
+
+    document.querySelector(".btn3").addEventListener("click", () => {
+      bharath.style.display = "block";
+    });
+
+    // Event delegation for all "X" clicks
+    document.body.addEventListener("click",function(e){
+      if (e.target.classList.contains("para")) {
+        e.target.parentElement.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>

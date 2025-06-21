@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry Form</title>
+    <style>
+  /* Overall page styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e3f2fd; /* Light blue background */
+    color: #222;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+  }
+
+  /* Label styling */
+  p {
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #0d47a1; /* Darker blue */
+  }
+
+  /* Inputs and selects */
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid #90caf9;
+    border-radius: 8px;
+    outline-color: #1976d2; /* Blue outline on focus */
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus,
+  input[type="number"]:focus,
+  select:focus {
+    border-color: #1976d2;
+  }
+
+  /* Button styling */
+  button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.5);
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0d47a1;
+  }
+
+  /* Result paragraphs */
+  #namepara,
+  #passpara,
+  #datepara,
+  #agepara,
+  #genderpara {
+    margin-top: 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0b3d91;
+  }
+
+  /* Special styling for name output */
+  #namepara {
+    color: #d32f2f; /* Red for emphasis */
+    font-weight: 700;
+  }
+</style>
+
+</head>
+<body>
+
+   
+
+        <p>Username</p>
+        <input type="text" placeholder="Enter the usernsame" id="name">
+        
+        <p>password</p>
+        <input type="password" placeholder="enter the password" id="pass">
+    
+        <p>date</p>
+        <input type="date" id="date">
+    
+        <p>age</p>
+        <input type="number" placeholder="enter the age" id="age"> 
+    
+        <p>gender</p>
+         <select id="gender">
+    
+            <option >gender</option>
+            <option >male</option>
+            <option >female</option>
+    
+        </select>
+        <br>
+        <br>
+    
+       <button onclick="handlesumbit()">submit</button>
+
+  
+
+
+    <p id="namepara">the name is:</p>
+    <p id="passpara">the password is:</p>
+    <p id="datepara">the date is:</p>
+    <p id="agepara">the age is:</p>
+    <p id="genderpara">the gender is:</p>
+
+    <script>
+        
+        function handlesumbit(){
+            var name=document.getElementById("name").value
+            var pass=document.getElementById("pass").value
+            var date=document.getElementById("date").value
+            var age=document.getElementById("age").value
+            var gender=document.getElementById("gender").value
+           
+    console.log(name,pass,date,age,gender)
+
+            var nameval=document.getElementById("namepara")
+            var passval=document.getElementById("passpara")
+            var dateval=document.getElementById("datepara")
+            var ageval=document.getElementById("agepara")
+            var genderval=document.getElementById("genderpara")
+
+
+    
+            nameval.innerHTML=`the name is :${name}`
+            nameval.style.color="red"
+            passval.innerHTML="the password :"+pass
+            dateval.innerHTML="the date is :"+date
+            ageval.innerHTML="the age is :"+age
+            genderval.innerHTML="the gender is :"+gender
+
+
+            
+        }
+
+
+
+    </script>
+</body>
+</html>

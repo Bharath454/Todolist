@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  
+    <script>
+
+        var array=['naveen','bharath','siva','praveen','elakeeya']
+        var target="siva"
+        var ans =false
+
+       for(i=0;i<array.length;i++){
+
+        if(array[i]==target){
+            console.log(array[i])
+            ans=true
+            break
+        }
+    }
+       if(!ans){
+        console.log('not found')
+       }
+
+
+    //    array&object
+
+    var recipe=[
+       {
+        name:"sambar",
+        ingredients:['doll','sambar masala','water'],
+        instructions:['boil','sam' ]
+       },
+
+       {
+        name:"rasam",
+        ingredients:['doll','sambar masala','water'],
+        instructions:['boil','sam' ]
+       }
+
+    ]
+
+    for(i=0;i<recipe.length;i=i+1){
+
+        console.log(recipe [i].name)
+    }
+
+
+
+
+    </script>
+</body>
+</html>

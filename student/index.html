@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studenr  Details</title>
+    <link rel="stylesheet" href="studentdetails.css">
+</head>
+<body>
+    
+      <h1>Student Registration Form</h1>
+
+      <form >
+      <table border="5px" class="table1">
+
+            <tr>
+                <th>Name</th>
+                <td><input type="text" placeholder="Enter The Name" id="nameinput"></td>
+            </tr>
+    
+            <tr>
+                <th>Age</th>
+                <td><input type="number" placeholder="Enter The Age" id="ageinput"></td>
+            </tr>
+    
+            <tr>
+                <th>Gender</th>
+                <td><input id="genderinput"  type="radio" name="gender" value="Male">male  <input type="radio" name="gender" value="Female">female </td>
+            </tr>
+    
+            <tr>
+                <th>Course</th>
+    
+                <td><select id="courseinput">
+                    <option>Course  </option>
+                    <option>Python</option>
+                    <option>JAva</option>
+                    <option>SQL</option>
+                    <option>javascrpit</option>
+                </select></td>
+            </tr>
+    
+    
+            <tr>
+                <th>Email</th>
+                <td><input type="email" placeholder="Enter the Email" id="mailinput"></td>
+            </tr>
+
+           <tr>
+            <th>
+                <button class="btn"  >Save</button>
+            </th>
+           </tr>
+
+        </table>
+    </form>
+      <br>
+
+      <!-- downtable -->
+      
+      <table border="5px" id="container">
+
+        <tr >
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>COURSE</th>
+            <th>EMAIL</th>
+            <th>ACTION</th>
+        </tr>
+
+
+
+      </table>
+       
+
+
+      <script src="studentdetails.js"></script>
+
+
+
+
+
+</body>
+</html>
