@@ -172,3 +172,117 @@ button.delete:hover{
 .textfont{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+@media screen and (max-width: 488px) {
+  /* Outer container */
+  .box {
+    width: 80%;
+    height: auto;
+    margin: 100px auto;        /* Top & Bottom gap + Center horizontally */
+    padding: 20px;            /* Internal spacing */
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-height: 90vh;
+    overflow: hidden;
+  }
+
+  /* Title */
+  .todo {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkblue;
+    font-weight: bold;
+  }
+
+  /* Input + Button */
+  .input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;                 /* Space between input & button */
+    margin-bottom: 15px;
+    padding: 0 10px;
+  }
+
+  #inputbox {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #e9e6e6;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+  }
+
+  #btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  /* Scrollable task list */
+  .container {
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  table.container {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  table.container tr {
+    border-bottom: 1px solid #ddd;
+    
+  }
+
+  table.container td {
+    padding: 10px 5px;
+    word-break: break-word;
+    vertical-align: middle;
+  }
+
+  table.container td:first-child {
+    width: 65%;
+    text-align: left;
+  }
+
+  table.container td:last-child {
+    width: 35%;
+    text-align: right;
+  }
+
+  button.delete {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    padding: 6px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  button.delete:hover {
+    background-color: red;
+  }
+}
+
